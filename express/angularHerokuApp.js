@@ -1,11 +1,7 @@
-// edited from https://expressjs.com/en/starter/hello-world.html and
-// https://gist.github.com/hellotunmbi/a52a264c7cd05e08e8a6a648d89946e5
-
-// STEPS
-// 1. add express to the project: npm i express --save
-// 2. create app.js in project root and paste in this code
-// 3. change the 'start' script in package.json: "start": "node app.js",
-// to test, run: ng build && npm start, then going to localhost:$PORT
+// 1. In the terminal: add express to the project: npm i express --save
+// 2. In project root: create server.js and paste in this code
+// 3. In package.json: change the 'start' script to "start": "node server.js",
+// to test, run: ng build && npm start, then go to localhost:port
 
 const express = require('express');
 const app = express();
