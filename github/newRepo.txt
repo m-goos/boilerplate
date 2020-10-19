@@ -1,3 +1,5 @@
+this should be a markdown file.
+
 cd into repo
 git init
 code README.md // create and edit README.md in Visual Studio Code
@@ -6,3 +8,7 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin git@github.com:<username>/<repository-name>.git
 git push -u origin main
+
+when having trouble pushing, consider this: push -uf origin main
+https://stackoverflow.com/questions/24357108/git-updates-were-rejected-because-the-remote-contains-work-that-you-do-not-have
+https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-tag.html
