@@ -1,0 +1,8 @@
+echo "# ignore1234" >> README.md
+git init
+code README.md // create and edit README.md in Visual Studio Code
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:mhlgoossens/ignore1234.git
+git push -u origin main
