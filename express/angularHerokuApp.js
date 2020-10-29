@@ -3,17 +3,18 @@
 // 3. In package.json: change the 'start' script to "start": "node server.js",
 // to test, run: ng build && npm start, then go to localhost:port
 
-const express = require('express');
+const express = require("express");
 const app = express();
-const port = (process.env.PORT || 8080);
+const port = process.env.PORT || 8080;
+const path = require("path");
 
 // find the app name in package.json
-app.use(express.static(__dirname + '/dist/<name-of-app>'));
+app.use(express.static(__dirname + "/dist/<name-of-app>"));
 
-app.get('/*', function(req,res) {
-  res.sendFile(path.join(__dirname+'/dist/<name-of-app>/index.html'));
-  });
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname + "/dist/<name-of-app>/index.html"));
+});
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+  console.log(`Example app listening at http://localhost:${port}`);
+});
