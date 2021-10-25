@@ -12,3 +12,4 @@ git push -u origin main
 when having trouble pushing, consider this: push -uf origin main
 https://stackoverflow.com/questions/24357108/git-updates-were-rejected-because-the-remote-contains-work-that-you-do-not-have
 https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-tag.html
+Even though force pushing is not the best idea, this is about an empty, new repository, so it should not lead to any troubles down the road with git history..
